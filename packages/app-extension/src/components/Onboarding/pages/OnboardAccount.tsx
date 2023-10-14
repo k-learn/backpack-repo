@@ -53,6 +53,8 @@ export const OnboardAccount = ({
     action,
     keyringType,
     mnemonic,
+    firstName,
+    lastName,
     blockchain,
     signedWalletDescriptors,
     selectedBlockchains,

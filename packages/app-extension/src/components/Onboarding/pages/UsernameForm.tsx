@@ -41,7 +41,7 @@ export const UsernameForm = ({
         setError(err.message);
       }
     },
-    [username]
+    [username, firstName, lastName]
   );
 
   return (
