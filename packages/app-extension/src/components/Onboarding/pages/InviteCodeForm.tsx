@@ -125,6 +125,46 @@ export const InviteCodeForm = ({
             error={error ? true : false}
             errorMessage={error}
           />
+          <TextInput
+            inputProps={{
+              name: "firstname",
+              autoComplete: "off",
+              spellCheck: "false",
+              style: {
+                // slightly smaller text so it fits
+                fontSize: "0.9em",
+              },
+              autoFocus: true,
+            }}
+            placeholder="First Name"
+            type="text"
+            value=""
+            setValue={(e: any) => {
+              setInviteCode(e.target.value.replace(/[^a-zA-Z0-9\\-]/g, ""));
+            }}
+            error={error ? true : false}
+            errorMessage={error}
+          />
+          <TextInput
+            inputProps={{
+              name: "lastname",
+              autoComplete: "off",
+              spellCheck: "false",
+              style: {
+                // slightly smaller text so it fits
+                fontSize: "0.9em",
+              },
+              autoFocus: true,
+            }}
+            placeholder="Last Name"
+            type="text"
+            value=""
+            setValue={(e: any) => {
+              setInviteCode(e.target.value.replace(/[^a-zA-Z0-9\\-]/g, ""));
+            }}
+            error={error ? true : false}
+            errorMessage={error}
+          />
         </Box>
 
         <PrimaryButton label="Go" type="submit" />
